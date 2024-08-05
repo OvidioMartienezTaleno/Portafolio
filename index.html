@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="stylees.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ovidio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!-- Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img src="img/imagen.jpg" alt="">
+            </div>
+            <h1>OVIDIO TALENO</h1>
+            <h2>Estudiante de Ingeniería en computacion</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/ovidio_taleno/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ovidio-taleno-9092331bb/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/OvidioTaleno" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                
+                <a href="https://www.facebook.com/ovidio.martinez.77398" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>                  
+        </div>
+    </section>
+
+    <!--Seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Ovidio Martinez</span> Soy un apasionado del
+                ciclismo, la natación, y disfrutar de series y películas en mi
+                tiempo libre. Actualmente, estudio Computación, una disciplina 
+                que me fascina, especialmente en el área de programación. Disfruto
+                aprendiendo nuevos lenguajes de programación y creando proyectos 
+                que resuelvan problemas o simplemente me permitan explorar nuevas 
+                tecnologías y esto me ha permitido desarrollar habilidades técnicas y
+                una mentalidad analítica.</p>
+            <div class="fila">
+
+                <!--datos personale-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            31-07-2002
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            89717490
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ovidiotaleno@gmail.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            La America de Upala
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Estudiante</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            Juegos
+                        </div>
+    
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            Peliculas
+                        </div>
+    
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            Viajar
+                        </div>
+    
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            Caminar
+                        </div>
+    
+                        <div class="interes">
+                            <i class="fa-solid fa-bicycle"></i>
+                            Ciclismo
+                        </div>
+    
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            Leer
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-person-swimming"></i>
+                            Nadar
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            Musica
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+
+            </button>
+        </div>
+    </section>
+
+    <!--Seccion Skills-->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical Skill-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTMl & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GOLANG</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Professional skills-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--seccion curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería en computacion</h4>
+                        <span class="casa"> Tec</span>
+                        <span class="fecha">2020-2024</span>
+                        <p>Actualmente soy estudiante de Ingeniería en Computación en el TEC de 
+                            San Carlos, donde he estado cursando desde 2020. Espero graduarme en 
+                            2024 con un enfoque en la parte del backend o desarrollo de escritorio. 
+                            Durante mi tiempo en la universidad, he adquirido habilidades programación
+                             en C++ y Python, desarrollo web, análisis de datos entre otros, y estoy 
+                             interesado por seguir creciendo en estos campos.</p>
+                        <div class="conectori">
+                            <div class="circuloi">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>  
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Front developer</h4>
+                        <span class="casa">Joyas de la Naturaleza</span>
+                        <span class="fecha">2024</span>
+                        <p>Desarrollé una página web dedicada a la información de un mariposario, donde
+                            las personas pueden ver sobre las diferentes especies que posee el 
+                            mariposario, sus hábitats y su ciclo de vida. La página incluye secciones 
+                            informativas, galerías de imágenes y recursos educativos. </p>
+                        <div class="conectord">
+                            <div class="circulod">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Portafolio-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>To Do</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Reproductor de musica</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>compilador go</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero telefonico">
+                    <input type="text" placeholder="Direccion de correo">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+
+                <!--MAPA-->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Santa Clara de San carlos
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                llama al: 8971 - 7490
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: ovidiotaleno@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>     
+        <div class="redes">
+            <a href="https://www.instagram.com/ovidio_taleno/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ovidio-taleno-9092331bb/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/OvidioTaleno" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                
+                <a href="https://www.facebook.com/ovidio.martinez.77398" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+        </div> 
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
